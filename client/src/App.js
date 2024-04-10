@@ -7,7 +7,6 @@ import Home from "./components/home/Home.js";
 import Navbar from "./components/navbar/Navbar.js";
 import Post from "./components/post/Post.js";
 import Footer from "./components/footer/Footer.js";
-
 function App() {
   const PATH = process.env.REACT_APP_PATH;
   const { flag, setFlag, user } = useContext(AppContext);
