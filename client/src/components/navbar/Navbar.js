@@ -12,17 +12,16 @@ export default function Navbar() {
   };
   return (
     <div className="navbar">
-     
+      <Link className="links" to={`${PATH}/`}>
+        {" "}
+        Home{" "}
+      </Link>
 
-        <Link className="links" to={`${PATH}/`}> Home </Link>
-   
-   
-        {/* <Link className="links" to={`${PATH}/post`}> Post </Link> */}
- 
-        <Link className="links" to={`${PATH}/`} onClick={handleLogout}>
-          Logout
-        </Link>
-   
+      {/* <Link className="links" to={`${PATH}/post`}> Post </Link> */}
+
+      <Link className="links" to={`${PATH}/`} onClick={handleLogout}>
+        Logout
+      </Link>
     </div>
   );
 }

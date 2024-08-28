@@ -12,7 +12,8 @@ import fs from "fs";
 
 mongoose.connect("mongodb://127.0.0.1:27017/socialdb1");
 
-// app.use(express.static("public"));
+app.use(express.static("public"));
+// app.use(express.static("client/build"));
 app.use("/images", express.static("images"));
 
 const userSchema = mongoose.Schema(
